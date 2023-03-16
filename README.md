@@ -1,5 +1,5 @@
 # SprayJS
-Official repository of the SprayJS library built by Palash Chatterjee
+Official repository of the SprayJS library built by Palash Chatterjee <br />
 Documentation will be released soon
 
 ## Demo
