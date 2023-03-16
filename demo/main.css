@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000921;
+    font-family: sans-serif;
+    color: #aaa;
+}
+.selectThis {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+}
+input {
+    display: block;
+    background: transparent;
+    border: 1px solid #656565;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    color: #aaa;
+}
+.appArea {
+    text-align: center;
+}

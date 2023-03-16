@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="spray.js"></script>
+        <link rel="stylesheet" href="main.css" />
+        <title>SprayJS</title>
+
+        <script>
+            var selectedElement;
+            window.onload = function () {
+                selectedElement = Spray(
+                    ".selectThis",
+                    "icons/home.png",
+                    "linear-gradient(to bottom right, violet, green, royalblue)"
+                );
+            };
+            function updateStyle(v) {
+                if (v == "") {
+                    v =
+                        "linear-gradient(to bottom right, violet, green, royalblue)";
+                }
+                selectedElement.style(v);
+            }
+            function updateSource(v) {
+                if (v == "") {
+                    v = "icons/home.png";
+                }
+                selectedElement.source(v);
+                console.clear();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="appArea">
+            <div class="selectThis"></div>
+            <br />
+            <br />
+            <h2>Edit Spray</h2>
+            <input
+                id="editStyle"
+                placeholder="Enter new style"
+                onkeyup="updateStyle($(this).val())"
+            />
+            <br />
+            <input
+                id="editStyle"
+                placeholder="Enter new source"
+                onkeyup="updateSource($(this).val())"
+            />
+            <br />
+            <div style="text-align: left; line-height: 25px">
+                Try Sources:<br />
+                icons/clock.png<br />
+                icons/wifi.png<br />
+            </div>
+        </div>
+    </body>
+</html>
